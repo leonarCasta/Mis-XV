@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Mis XV Años · María Guadalupe Pizaña Ramírez · Save the Date</title>
+    <meta name="description" content="Aparta la fecha: sábado 28 de noviembre de 2026. Acompáñame a celebrar mis XV años en Chihuahua.">
+    <meta name="theme-color" content="#8E6FB0">
+    <meta name="author" content="Familia Pizaña Ramírez">
+
+    <!-- ============================================================
+         VISTA PREVIA AL COMPARTIR (WhatsApp, Facebook, etc.)
+         IMPORTANTE: al publicar en GitHub Pages, cambia estas URLs
+         por las absolutas de tu sitio, por ejemplo:
+         https://tu-usuario.github.io/tu-repo/assets/og-image.jpg
+         ============================================================ -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:title" content="Mis XV Años · María Guadalupe · Save the Date">
+    <meta property="og:description" content="Sábado 28 de noviembre de 2026 · Chihuahua, México. Aparta la fecha para celebrar mis XV años. ✨">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <meta property="og:image:alt" content="Invitación de XV años en lavanda y dorado, 28 de noviembre de 2026">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://TU-USUARIO.github.io/TU-REPO/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mis XV Años · María Guadalupe">
+    <meta name="twitter:description" content="Sábado 28 de noviembre de 2026 · Chihuahua, México. Aparta la fecha. ✨">
+    <meta name="twitter:image" content="assets/og-image.jpg">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <!-- Tipografías: una script elegante + una serif fina -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Marca que JS está disponible (evita ocultar contenidos sin JS) -->
+    <script>document.documentElement.classList.replace('no-js', 'js');</script>
+
+    <noscript>
+        <style>
+            /* Sin JavaScript: se muestra todo el contenido y se omite la portada de opening */
+            #welcome { display: none !important; }
+            body.welcome-open { overflow: auto !important; }
+            body.welcome-open .hero { pointer-events: auto !important; }
+            .reveal { opacity: 1 !important; transform: none !important; }
+            .music-toggle { display: none !important; }
+        </style>
+    </noscript>
+</head>
+
+<body class="welcome-open">
+
+    <!-- Adorno floral reutilizable para los divisores -->
+    <svg class="svg-defs" aria-hidden="true" focusable="false">
+        <symbol id="floral-ornament" viewBox="0 0 40 40">
+            <g fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 20c-5-2-8-5-8-9 4 0 7 2 8 6"/>
+                <path d="M20 20c5-2 8-5 8-9-4 0-7 2-8 6"/>
+                <path d="M20 20c-2-5-2-9 0-12 2 3 2 7 0 12"/>
+                <path d="M20 20c2 5 2 9 0 12-2-3-2-7 0-12"/>
+                <path d="M20 20c-5 2-9 2-12 0 3-2 7-2 12 0"/>
+                <path d="M20 20c5 2 9 2 12 0-3-2-7-2-12 0"/>
+            </g>
+            <circle cx="20" cy="20" r="1.9" fill="currentColor"/>
+        </symbol>
+    </svg>
+
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============================================================
+         1. PORTADA DE APERTURA (SOBRE LAVANDA CON SELLO DE LACRE)
+         Se cierra al tocar el sello; ese gesto permite iniciar la música.
+         ============================================================ -->
+    <div id="welcome" class="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+        <div class="welcome-glow" aria-hidden="true"></div>
+        <div class="welcome-inner">
+            <p class="welcome-kicker">Mis XV Años</p>
+            <h1 id="welcome-title" class="welcome-name">
+                <span id="welcome-name">María Guadalupe</span>
+            </h1>
+            <p class="welcome-date" id="welcome-date">Sábado · 28 · 11 · 2026</p>
+
+            <div class="envelope-wrap">
+                <div class="envelope" aria-hidden="true">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-letter">
+                        <span class="envelope-letter-mono">M</span>
+                        <span class="envelope-letter-copy">María Guadalupe</span>
+                        <span class="envelope-letter-small">28 · 11 · 2026</span>
+                    </div>
+                    <div class="envelope-front"></div>
+                    <div class="envelope-flap"></div>
+                </div>
+
+                <button id="open-invite" class="seal" type="button" aria-label="Abrir la invitación y activar la música">
+                    <span class="seal-inner" aria-hidden="true">
+                        <svg class="seal-rose" viewBox="0 0 64 64" fill="none"
+                             stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                             stroke-linejoin="round" focusable="false">
+                            <path d="M32 13c-6.4 0-11 4.3-11 9.8 0 6.1 5 10.4 11 10.4s11-4.3 11-10.4C43 17.3 38.4 13 32 13Z"/>
+                            <path d="M32 19.5c-3.2 0-5.6 2.3-5.6 5.1 0 3 2.5 5.3 5.6 5.3s5.6-2.3 5.6-5.3c0-2.8-2.4-5.1-5.6-5.1Z"/>
+                            <path d="M32 24c-1.5 0-2.7 1.2-2.7 2.6 0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7C34.7 25.2 33.5 24 32 24Z"/>
+                            <path d="M21 33c-4.4 2.3-7.2 6-8 11M43 33c4.4 2.3 7.2 6 8 11M32 39v12"/>
+                            <path d="M18 44c4.7-2.1 9.8-1.8 14 1 4.2-2.8 9.3-3.1 14-1"/>
+                            <path d="M25 48c-2.3 2-3.6 4.5-4 7M39 48c2.3 2 3.6 4.5 4 7"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <p class="welcome-hint">Toca el sello para abrir</p>
+            <p class="welcome-note">
+                Con música · Hey Lover
+                <span class="welcome-note-divider" aria-hidden="true">✦</span>
+                <button id="open-silent" class="link-button" type="button">Entrar sin música</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         2. HERO / PORTADA
+         ============================================================ -->
+    <header class="hero" id="inicio">
+        <canvas id="sparkles" class="hero-sparkles" aria-hidden="true"></canvas>
+        <div class="hero-arch" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+            <p class="hero-kicker hero-anim">Save the Date</p>
+            <p class="hero-xv hero-anim">Mis XV Años</p>
+
+            <h1 class="hero-name" id="hero-name" tabindex="-1">
+                <span class="hero-name-first hero-anim" id="hero-name-first">María Guadalupe</span>
+                <span class="hero-name-last hero-anim" id="hero-name-last">Pizaña Ramírez</span>
+            </h1>
+
+            <div class="hero-date-group hero-anim">
+                <p class="hero-weekday" id="hero-weekday">Sábado</p>
+                <p class="hero-date-main" id="hero-date-main">28 · 11 · 2026</p>
+                <p class="hero-date-sub" id="hero-date-sub">Chihuahua, México</p>
+            </div>
+
+            <a class="scroll-cue hero-anim" href="#fecha">
+                <span>Desliza</span>
+                <span class="scroll-line" aria-hidden="true"></span>
+            </a>
+        </div>
+    </header>
+
+    <main id="contenido">
+
+        <!-- ============================================================
+             3. MENSAJE: APARTA LA FECHA
+             ============================================================ -->
+        <section class="section section-message" id="fecha" aria-labelledby="fecha-title">
+            <div class="section-inner narrow">
+                <div class="reveal">
+                    <p class="eyebrow">Una fecha para recordar</p>
+                    <h2 class="script-title" id="fecha-title">Aparta la fecha</h2>
+                    <p class="lead">
+                        Hay momentos que se sueñan toda la vida, y este es uno de ellos.
+                        Quiero compartir contigo el inicio de una nueva etapa, rodeada
+                        de las personas que más quiero.
+                    </p>
+                    <p class="date-ribbon">
+                        <span id="message-date">Sábado 28 de noviembre de 2026</span>
+                        <span class="ribbon-star" aria-hidden="true">✦</span>
+                        <span id="message-city">Chihuahua, México</span>
+                    </p>
+                </div>
+
+                <div class="divider" aria-hidden="true">
+                    <span class="divider-line"></span>
+                    <svg class="divider-flower" viewBox="0 0 40 40" focusable="false">
+                        <use href="#floral-ornament"></use>
+                    </svg>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             4. LA QUINCEAÑERA · FOTO PRINCIPAL + GALERÍA LADRILLO
+             ============================================================ -->
+        <section class="section section-photos" id="quinceanera" aria-labelledby="quince-title">
+            <div class="section-inner photo-layout">
+
+                <div class="photo-visual reveal">
+                    <button class="portrait-trigger" type="button"
+                            data-lightbox data-full="assets/1.jpg"
+                            aria-label="Ampliar la foto principal de María Guadalupe">
+                        <span class="portrait">
+                            <img id="photo-xv"
+                                 src="assets/1.jpg"
+                                 alt="María Guadalupe con look vaquero en el campo"
+                                 width="1200" height="1600"
+                                 loading="eager" decoding="async"
+                                 data-fallback="Foto 1">
+                        </span>
+                    </button>
+                    <span class="portrait-badge" aria-hidden="true">XV</span>
+                    <span class="photo-sparkle photo-sparkle-one" aria-hidden="true">✦</span>
+                    <span class="photo-sparkle photo-sparkle-two" aria-hidden="true">✧</span>
+                </div>
+
+                <div class="photo-copy reveal" data-delay="120">
+                    <p class="eyebrow">La quinceañera</p>
+                    <h2 class="script-title script-title-left" id="quince-title">María Guadalupe</h2>
+                    <p class="lead">
+                        Con el corazón lleno de ilusión, te invito a ser parte
+                        de este día tan especial.
+                    </p>
+
+                    <!-- Galería tipo ladrillo: dos filas desfasadas -->
+                    <div class="gallery-brick" aria-label="Galería de fotos con estilo vaquero">
+                        <div class="gallery-row gallery-row--right">
+                            <button class="gallery-photo reveal" type="button"
+                                    data-lightbox data-full="assets/2.jpg" data-delay="60"
+                                    aria-label="Ampliar foto 2 de la galería">
+                                <img src="assets/2.jpg"
+                                     alt="María Guadalupe con sombrero vaquero"
+                                     width="900" height="1125"
+                                     loading="lazy" decoding="async"
+                                     data-fallback="Foto 2">
+                            </button>
+
+                            <button class="gallery-photo reveal" type="button"
+                                    data-lightbox data-full="assets/3.jpg" data-delay="140"
+                                    aria-label="Ampliar foto 3 de la galería">
+                                <img src="assets/3.jpg"
+                                     alt="María Guadalupe junto a una cerca de madera"
+                                     width="900" height="1125"
+                                     loading="lazy" decoding="async"
+                                     data-fallback="Foto 3">
+                            </button>
+                        </div>
+
+                        <div class="gallery-row gallery-row--left">
+                            <button class="gallery-photo reveal" type="button"
+                                    data-lightbox data-full="assets/4.jpg" data-delay="220"
+                                    aria-label="Ampliar foto 4 de la galería">
+                                <img src="assets/4.jpg"
+                                     alt="María Guadalupe con botas y detalles de encaje"
+                                     width="900" height="1125"
+                                     loading="lazy" decoding="async"
+                                     data-fallback="Foto 4">
+                            </button>
+
+                            <button class="gallery-photo reveal" type="button"
+                                    data-lightbox data-full="assets/5.jpg" data-delay="300"
+                                    aria-label="Ampliar foto 5 de la galería">
+                                <img src="assets/5.jpg"
+                                     alt="María Guadalupe en una sesión vaquera al atardecer"
+                                     width="900" height="1125"
+                                     loading="lazy" decoding="async"
+                                     data-fallback="Foto 5">
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="gallery-note">Un mismo estilo: botas, encaje y campo.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+             5. CUENTA REGRESIVA
+             ============================================================ -->
+        <section class="section section-countdown" id="cuenta" aria-labelledby="countdown-title">
+            <div class="section-inner">
+                <div class="countdown-panel reveal">
+                    <span class="panel-sparkle panel-sparkle-one" aria-hidden="true">✦</span>
+                    <span class="panel-sparkle panel-sparkle-two" aria-hidden="true">✧</span>
+
+                    <p class="eyebrow">Falta poco</p>
+                    <h2 class="script-title" id="countdown-title">La cuenta regresiva</h2>
+                    <p class="countdown-date" id="countdown-date">Sábado 28 de noviembre de 2026</p>
+
+                    <div class="countdown" id="countdown" role="timer"
+                         aria-label="Tiempo restante para el 28 de noviembre de 2026">
+                        <div class="countdown-box">
+                            <span class="countdown-num" id="cd-days">000</span>
+                            <span class="countdown-label">Días</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="countdown-num" id="cd-hours">00</span>
+                            <span class="countdown-label">Horas</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="countdown-num" id="cd-minutes">00</span>
+                            <span class="countdown-label">Minutos</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="countdown-num" id="cd-seconds">00</span>
+                            <span class="countdown-label">Segundos</span>
+                        </div>
+                    </div>
+
+                    <p class="countdown-note">Cada día que pasa es un paso más cerca de ti.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             6. BENDICIÓN DE DIOS Y DE LOS PADRES
+             ============================================================ -->
+        <section class="section section-blessing" id="bendicion" aria-labelledby="blessing-title">
+            <div class="section-inner narrow">
+                <div class="blessing-inner reveal">
+                    <svg class="blessing-icon" viewBox="0 0 64 64" fill="none"
+                         stroke="currentColor" stroke-width="1.3" stroke-linecap="round"
+                         stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M32 8v48M18 24h28"/>
+                        <path d="M32 4v4M32 56v4M14 24h4M46 24h4" opacity=".55"/>
+                        <circle cx="32" cy="24" r="2.2" fill="currentColor" stroke="none"/>
+                    </svg>
+
+                    <h2 class="blessing-title" id="blessing-title">
+                        Con la bendición de Dios<br>y de mis padres
+                    </h2>
+
+                    <div class="parents">
+                        <p id="father-name">Pedro Antonio Pizaña Tarango</p>
+                        <span class="parents-amp" aria-hidden="true">&amp;</span>
+                        <p id="mother-name">Margarita Ramírez Montes</p>
+                    </div>
+
+                    <p class="blessing-note">y el amor de toda mi familia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             7. LUGARES CON IMAGEN
+             ============================================================ -->
+        <section class="section section-places" id="lugares" aria-labelledby="places-title">
+            <div class="section-inner">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Dónde nos vemos</p>
+                    <h2 class="script-title" id="places-title">Los lugares</h2>
+                    <p class="section-sub">Dos momentos, un mismo día inolvidable.</p>
+                </div>
+
+                <div class="places-grid">
+                    <!-- Ceremonia -->
+                    <article class="place-card reveal" aria-labelledby="ceremony-name">
+                        <div class="place-media">
+                            <img src="assets/iglesia.jpg"
+                                 alt="Fachada de la Parroquia Jesús Misericordioso"
+                                 width="1200" height="800"
+                                 loading="lazy" decoding="async"
+                                 data-fallback="Iglesia">
+                        </div>
+
+                        <div class="place-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <path d="M24 4v10M19 9h10"/>
+                                <path d="M14 44V24l10-7 10 7v20"/>
+                                <path d="M20 44V32h8v12"/>
+                                <path d="M8 44h32"/>
+                            </svg>
+                        </div>
+
+                        <p class="place-label">Ceremonia religiosa</p>
+                        <h3 id="ceremony-name">Parroquia Jesús Misericordioso</h3>
+                        <p class="place-address" id="ceremony-address">
+                            Calle Rosaura Zapata, Col. Lázaro Cárdenas, Chihuahua, Chih.
+                        </p>
+
+                        <p class="place-time" id="ceremony-time-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true" focusable="false">
+                                <circle cx="12" cy="12" r="8"/>
+                                <path d="M12 7.5V12l3 2"/>
+                            </svg>
+                            <span>Hora: <strong id="ceremony-time">Por confirmar</strong></span>
+                        </p>
+
+                        <a class="btn btn-outline place-map" id="ceremony-map"
+                           href="https://www.google.com/maps/search/?api=1&amp;query=Parroquia%20Jes%C3%BAs%20Misericordioso%2C%20Calle%20Rosaura%20Zapata%2C%20Col.%20L%C3%A1zaro%20C%C3%A1rdenas"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Ver en Google Maps: Parroquia Jesús Misericordioso">
+                            Ver en Google Maps
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true" focusable="false">
+                                <path d="M7 17 17 7M9 7h8v8"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Recepción -->
+                    <article class="place-card reveal" data-delay="120" aria-labelledby="reception-name">
+                        <div class="place-media">
+                            <img src="assets/salon.jpg"
+                                 alt="Salón Mariana Bonita, espacio para la recepción"
+                                 width="1200" height="800"
+                                 loading="lazy" decoding="async"
+                                 data-fallback="Salón">
+                        </div>
+
+                        <div class="place-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <path d="M14 7h9l-1.3 13.2a3.2 3.2 0 0 1-6.4 0L14 7Z"/>
+                                <path d="M18.5 23.4V36M14 40h9"/>
+                                <path d="M27 11h9l-1.3 13.2a3.2 3.2 0 0 1-6.4 0L27 11Z"/>
+                                <path d="M31.5 27.4V36M27 40h9"/>
+                                <path d="M20.5 13.5h5M33.5 17.5h5" opacity=".5"/>
+                            </svg>
+                        </div>
+
+                        <p class="place-label">Recepción</p>
+                        <h3 id="reception-name">Salón Mariana Bonita</h3>
+                        <p class="place-address" id="reception-address">
+                            Calle Sierra Pedernales 10600, Col. Sierra Azul, Chihuahua, Chih.
+                        </p>
+
+                        <p class="place-time" id="reception-time-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true" focusable="false">
+                                <circle cx="12" cy="12" r="8"/>
+                                <path d="M12 7.5V12l3 2"/>
+                            </svg>
+                            <span>Hora: <strong id="reception-time">Por confirmar</strong></span>
+                        </p>
+
+                        <a class="btn btn-outline place-map" id="reception-map"
+                           href="https://www.google.com/maps/search/?api=1&amp;query=Sal%C3%B3n%20Mariana%20Bonita%2C%20Calle%20Sierra%20Pedernales%2010600%2C%20Col.%20Sierra%20Azul"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Ver en Google Maps: Salón Mariana Bonita">
+                            Ver en Google Maps
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true" focusable="false">
+                                <path d="M7 17 17 7M9 7h8v8"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             8. CALENDARIO
+             ============================================================ -->
+        <section class="section section-actions" id="confirmar" aria-labelledby="actions-title">
+            <div class="section-inner narrow">
+                <div class="reveal">
+                    <p class="eyebrow">Un detalle importante</p>
+                    <h2 class="script-title" id="actions-title">Acompáñame</h2>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-outline" id="add-calendar" type="button">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                 aria-hidden="true" focusable="false">
+                                <rect x="3.5" y="5.5" width="17" height="15" rx="2.5"/>
+                                <path d="M8 3.5v4M16 3.5v4M3.5 10h17"/>
+                                <path d="M8 14h2M14 14h2M8 17.5h2"/>
+                            </svg>
+                            Agregar al calendario
+                        </button>
+                    </div>
+
+                    <p class="action-status" id="calendar-status" role="status" aria-live="polite"></p>
+
+                    <p class="song-note">
+                        <span class="song-note-icon" aria-hidden="true">♪</span>
+                        Canción especial: <span id="song-title">Hey Lover — The Daughters of Eve</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================
+         10. PIE DE PÁGINA
+         ============================================================ -->
+    <footer class="site-footer" id="cierre">
+        <div class="footer-inner reveal">
+            <div class="divider divider-footer" aria-hidden="true">
+                <span class="divider-line"></span>
+                <svg class="divider-flower" viewBox="0 0 40 40" focusable="false">
+                    <use href="#floral-ornament"></use>
+                </svg>
+                <span class="divider-line"></span>
+            </div>
+            <p class="footer-message">Te espero para celebrar conmigo <span class="footer-sparkle" aria-hidden="true">✨</span></p>
+            <p class="footer-name" id="footer-name">María Guadalupe</p>
+            <p class="footer-date" id="footer-date">28 · 11 · 2026 · Chihuahua, México</p>
+            <p class="footer-small">Con amor, la familia Pizaña Ramírez</p>
+        </div>
+    </footer>
+
+    <!-- Visor de fotografías -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true"
+         aria-label="Vista ampliada de la fotografía" hidden>
+        <button id="lightbox-close" class="lightbox-close" type="button"
+                aria-label="Cerrar vista ampliada">&times;</button>
+        <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+             alt="" decoding="async">
+    </div>
+
+    <!-- Reproductor flotante -->
+    <button id="music-toggle" class="music-toggle" type="button"
+            aria-label="Reproducir música" aria-pressed="false" hidden>
+        <span class="music-ring" aria-hidden="true"></span>
+        <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M8.5 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4c-.7-.4-1.6.1-1.6.9Z"/>
+        </svg>
+        <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <rect x="6.5" y="5" width="4" height="14" rx="1.2"/>
+            <rect x="13.5" y="5" width="4" height="14" rx="1.2"/>
+        </svg>
+    </button>
+
+    <audio id="bg-music" loop preload="none">
+        <source src="assets/hey-lover.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
